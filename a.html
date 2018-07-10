@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+#myDIV1 {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #f1f1f1;
+    border: 1px solid black;}
+#myDIV2 {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background-color:  #f1f1f1;
+    border: 1px solid black; display: none;}
+ #myDIV3 {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #f1f1f1;
+    border: 1px solid black; display: none;}
+a:hover{background-color: yellow;}
+</style>
+</head>
+<body>
+<script type="text/javascript" src="use.js"></script>
+
+
+<!-- LOGIN -->
+<div id="myDIV1" align="center">
+<form id="form1" method="post" onsubmit="return login()">
+ <div><h2>SIGN IN</h2></div>
+ Username: <input type="text" id="fname"><span id="erroruser" style="color:red"></span><br>
+ Password:<input type="password" id="fpassword"><span id="errorpassword" style="color:red"></span><br>
+ <input type="submit" value="Submit">
+ <span id="success" style="color:green"></span>
+
+<h5><a onclick="myFunction1()">Sign Up</a></h5>
+<h5><a onclick="myFunction2()">Contact Us</a></h5>   
+</form>
+
+</div><br>
+ 
+
+<!-- SIGNUP -->
+<div id="myDIV2" align="center">
+<form id="form2" method="POST" onsubmit="return signup()">
+    <div><h2>SIGN UP</h2></div>
+    Username:<input type="text" id="fname2" minlength="1" maxlength="20"><span id="errorname2" style="color:red"></span> <br>
+    Email:<input type="email" id="femail2"><span id="erroremail2" style="color:red"></span><br>
+    Password:<input type="Password" id="fpassword2" minlength="6" maxlength="15"><span id="errorpassword2" style="color:red"></span> <br><input type="submit" value="Submit">
+</form>   
+</div><br>
+
+
+<!-- CONTACT -->
+<div id="myDIV3">
+<form id="form3" method="POST" align="center" onsubmit="return contactus()">
+    <div><h2>CONTACT US</h2></div>
+    Name:<input type="text" name="fname3" minlength="3" maxlength="20"><span id="errorname3" style="color:red"></span><br>
+    Email:<input type="email" name="femail3"><span id="erroremail3" style="color:red"></span> <br>
+    Phone:<input type="tel" name="fphone3"><span id="errorphone3" style="color:red"></span> <br>
+    Questions:<textarea minlength="1" maxlength="200"></textarea><br>
+    <input type="submit" value="Send">
+</form>
+</div> 
+
+
+</body>
+</html>
+
+​
+
